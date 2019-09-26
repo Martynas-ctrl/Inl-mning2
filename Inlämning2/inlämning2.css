@@ -1,0 +1,113 @@
+*{
+  margin:0;
+}
+
+body{
+  background-color: #2f2f2f;
+}
+
+/* -----Header starts here ------ */
+header{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+flex: auto;
+justify-content: space-around;
+height:60px;
+background-color: crimson;
+border-top: 1px solid #3f3f3f;
+border-bottom: 2px solid darkred;
+}
+
+/* ------ logo ------ */
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+h1{
+  display: flex;
+  font-size: 30px;
+  color: black;
+  align-items: center;
+}
+
+/* ------ links ------ */
+nav{
+  display: flex;
+  font-size: 25px;
+}
+
+.nav{
+  margin:20px;
+  color: black;
+}
+
+nav .navcurrent{
+  margin:20px;
+  color: white;
+}
+
+/* ------ textboxes ------ */
+form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ------ buttons ------ */
+.button1{
+  width: 20px;
+  margin-right: 25px;
+}
+
+.button2{
+  width:20px;
+}
+
+.button3{
+  width: 20px;
+}
+/* ------ header ends here ------ */
+
+/* -- content in the middle of the page (all movies)-- */
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px;
+}
+
+.poster{
+  margin:20px;
+}
+
+/* ------ animations ------ */
+img{
+  flex:auto;
+}
+
+.poster:hover{
+  transition-duration: 1.5s;
+  transform: scale(1.5);
+}
+
+/* responsive web design */
+@media (max-width: 700px){
+  .nav{
+    display: none;
+  }
+
+  .navcurrent{
+    display: none;
+  }
+
+  form{
+    display: none;
+  }
+
+  header{
+    display: flex;
+    justify-content: center;
+  }
+}
